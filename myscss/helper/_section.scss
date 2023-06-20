@@ -1,0 +1,43 @@
+.expected-project{
+    .card{
+        .card-body{
+            img{
+                border-radius: 10px;
+            }
+        }
+    }
+}
+.card{
+    cursor: pointer;
+    border:none;
+    .card-img-overlay {
+        position: absolute;
+        content: "  ";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.4));
+        z-index: 1;
+        transition: opacity 0.5s linear;
+        opacity: 0;
+        /*border-radius: 30px;*/
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+.page {
+    .pagination {
+      .page-item {
+        .page-link {
+            transition: background-color 0.5s, color 0.5s;
+            &:hover {
+                color: #F9C745;
+            }
+        }
+      }
+    }
+}
+  
+  

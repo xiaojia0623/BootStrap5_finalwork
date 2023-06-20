@@ -1,0 +1,41 @@
+.menu {
+    transition: all 0.3s ease-in-out;
+    color: #000;
+    margin-left: 10px;
+    position: relative;
+    z-index: 1;
+  
+    &::before {
+      content: "-";
+      position: absolute;
+      bottom: 0;
+      left: -15px;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    &:hover {
+      color: #f9c745;
+      transform: translateX(80px);
+      padding-left: 15px; /* 新增此行 */
+  
+      &::before {
+        transform: translateX(0%);
+      }
+    }
+}
+@include pad{
+    ul{
+        margin:0 auto;
+        li{
+            .menu{
+                &:hover{
+                    color:#f9c745;
+                }
+                &::before {
+                    display: none; /* 新增此行 */
+                }
+            }
+        }
+    }
+}

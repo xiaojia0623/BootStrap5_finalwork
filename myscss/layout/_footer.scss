@@ -1,0 +1,8 @@
+.footer-top{
+    @include pad{
+        text-align: center;
+    }
+}
+.sticky-pic{
+    cursor:pointer;
+}

@@ -1,0 +1,47 @@
+.btn-fixed{
+    position: fixed;
+    right: 60px;
+    bottom: 0;
+}
+//首頁右下角固定圖
+.bottom-pic {
+    .dialog-pic {
+        .dialog-border-bottom {
+            border: 3px solid #888888;
+            height: 45px;
+            width: 150px;
+            margin-bottom: 30px;
+            position: relative;
+            cursor: pointer;
+            border-radius: 10px;  
+            &:before {
+            border-color: #888888 transparent transparent;
+            border-style: solid;
+            border-width: 20px 20px 20px 20px;
+            bottom: -40px;
+            content: "";
+            height: 0px;
+            position: absolute;
+            left: 50px;
+            width: 0px;
+            }
+    
+            &:after {
+            border-color: #fff transparent transparent;
+            border-style: solid;
+            border-width: 20px;
+            content: "";
+            height: 0px;
+            position: absolute;
+            left: 50px;
+            bottom: -33px;
+            width: 0px;
+            }
+    
+            p {
+            padding-top: 7px;
+            }
+        }
+    }
+}
+  

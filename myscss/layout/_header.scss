@@ -1,0 +1,37 @@
+nav{
+    img{
+        width: 160px; height: 62px;
+    }
+    .collapse{
+        .navbar-nav{
+            li{
+                margin-bottom: 2px;
+                &:hover {
+                    background-color: rgb(194, 179, 179);
+                    border-radius: 25px;
+                }
+            }
+        }
+    }
+}
+.header{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    h1{
+        color:#34392c;
+    }
+}
+.bg-cover{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.orange-title, .h2-words{
+    @include pad{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
